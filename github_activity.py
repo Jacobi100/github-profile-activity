@@ -1,3 +1,4 @@
+import json
 import sys 
 if len(sys.argv) != 2 :
     print("Usage: python3 github_activity.py <username>")
@@ -22,3 +23,14 @@ with urllib.request.urlopen(request) as response :
     data = response.read()
 
 print(data) 
+
+events = json.loads(data.decode('utf-8'))
+print(type(events))
+print(len(events))
+print(events[0])
+
+for event in events : 
+    event_type = event.get("type","UnknownEvent")
+    repository = event.get("repo", {}).get("name","unknown repository")
+
+    print(event_type, repository)
