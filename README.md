@@ -21,10 +21,7 @@ No third-party libraries are used. It relies only on Python’s standard library
 - `errors.py` – custom exceptions for expected failures
 - `README.md` – usage and project documentation
 
-## Requirements
 
-- Python 3
-- Internet access to reach GitHub’s public API
 
 ## Setup
 
@@ -124,13 +121,7 @@ Project URL for verification:
 
 https://roadmap.sh/projects/github-user-activity
 
-## Testing
 
-To run the project tests later, use:
-
-```bash
-python3 -m unittest discover -s tests -v
-```
 
 ## Notes
 
