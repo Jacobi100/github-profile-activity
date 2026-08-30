@@ -118,6 +118,12 @@ with recommended headers such as:
 }
 ```
 
+## Verification project
+
+Project URL for verification:
+
+https://roadmap.sh/projects/github-user-activity
+
 ## Testing
 
 To run the project tests later, use:
