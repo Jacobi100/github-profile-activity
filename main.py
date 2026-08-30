@@ -9,8 +9,15 @@ def event_format(event):
     repository = event.get('repo', {}).get('name', 'unknown repository')
 
     if event_type == 'PushEvent':
-        commits = event.get('payload', {}).get('commits', [])
-        return f"Pushed {len(commits)} commits to {repository}"
+        payload = event.get('payload') or {}
+        commits = payload.get('commits')
+
+        if commits is None:
+            return f"Pushed to {repository}"
+
+        count = len(commits)
+        noun = 'commit' if count == 1 else 'commits'
+        return f"Pushed {count} {noun} to {repository}"
 
     if event_type == 'IssuesEvent':
         action = event.get('payload', {}).get('action', 'updated')
