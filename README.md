@@ -37,7 +37,7 @@ cd github-user-activity
 ## Run the app
 
 ```bash
-python3 main.py octocat
+python3 main.py {username}
 ```
 
 Or with any public GitHub username:
