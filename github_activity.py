@@ -34,3 +34,7 @@ for event in events :
     repository = event.get("repo", {}).get("name","unknown repository")
 
     print(event_type, repository)
+
+from main import event_format 
+for event in events :
+    print(f"-{event_format(event)}")
