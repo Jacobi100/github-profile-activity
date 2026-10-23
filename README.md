@@ -126,3 +126,6 @@ https://roadmap.sh/projects/github-user-activity
 ## Notes
 
 This project is intentionally built with only Python’s standard library, which keeps it easy to understand and useful for learning API basics, JSON parsing, formatting, and error handling.
+
+
+Happy coding!!!
