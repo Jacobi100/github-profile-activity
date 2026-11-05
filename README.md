@@ -115,12 +115,9 @@ with recommended headers such as:
 }
 ```
 
-## Verification project
+## Project link
 
-Project URL for verification:
-
-https://roadmap.sh/projects/github-user-activity
-
+[GitHub User Activity CLI - roadmap.sh project](https://roadmap.sh/projects/github-user-activity)
 
 
 ## Notes
